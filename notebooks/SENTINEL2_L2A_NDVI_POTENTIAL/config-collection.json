@@ -1,0 +1,47 @@
+{
+    "collection_id": "SENTINEL2_L2A_NDVI_POTENTIAL",
+    "title": "Sentinel-2 L2A NDVI potential",
+    "description": "Sentinel-2 L2A NDVI potential is a derived product, which contains long-term, stable vegetation distribution",
+    "instruments": [],
+    "keywords": ["sentinel hub", "raster", "multi spectral imagery", "agriculture","sentinel"],
+    "mission": [],
+    "platform": [],
+    "providers": [
+        {
+            "name": "Sentinel Hub",
+            "roles": [
+                "licensor",
+                "processor",
+                "producer"
+            ],
+            "url": "https://services.sentinel-hub.com/"
+        }
+    ],
+    "layout_strategy_item_template": "${collection}",
+    "input_path_parser": {
+        "classname": "DefaultInputPathParser",
+        "parameters": {
+            "regex_pattern": ".*Potential_(?P<year>\\d{4}).tif$",
+            "period": "yearly",
+            "fixed_values": {
+                "asset_type": "Potential"
+            }
+        }
+    },
+    "item_assets": {
+        "Potential": {
+            "title": "Potential",
+            "description": "NDVI mean per year",
+            "eo_bands": [
+                {
+                    "name": "Potential",
+                    "description": "NDVI mean per year",
+                    "data_type": "float32",
+                    "sampling": "area",
+                    "spatial_resolution": 10
+                }
+            ]
+        }
+    },
+    "overrides": {}
+}
