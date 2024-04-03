@@ -17,10 +17,11 @@ dependencies:
   - brotli-python=1.0.9=py311h313beb8_7
   - bzip2=1.0.8=h80987f9_5
   - c-ares=1.19.1=h80987f9_0
-  - ca-certificates=2024.2.2=hf0a4a13_0
-  - certifi=2024.2.2=pyhd8ed1ab_0
+  - ca-certificates=2024.3.11=hca03da5_0
+  - certifi=2024.2.2=py311hca03da5_0
   - cffi=1.16.0=py311h80987f9_0
   - charset-normalizer=3.3.2=pyhd8ed1ab_0
+  - click=8.1.7=py311hca03da5_0
   - comm=0.2.1=pyhd8ed1ab_0
   - curl=8.5.0=h02f6b3c_0
   - cyrus-sasl=2.1.28=h9131b1a_1
@@ -101,7 +102,6 @@ dependencies:
   - numpy=1.26.4=py311he598dae_0
   - numpy-base=1.26.4=py311hfbfe69c_0
   - openblas=0.3.26=openmp_h55c453e_0
-  - openeo=0.27.0=pyhd8ed1ab_0
   - openssl=3.2.1=h0d3ecfb_0
   - overrides=7.4.0=py311hca03da5_0
   - packaging=23.2=pyhd8ed1ab_0
@@ -125,6 +125,7 @@ dependencies:
   - pystac=1.8.4=pyhd8ed1ab_0
   - python=3.11.8=hb885b13_0
   - python-dateutil=2.9.0=pyhd8ed1ab_0
+  - python-dotenv=0.21.0=py311hca03da5_0
   - python-fastjsonschema=2.16.2=py311hca03da5_0
   - python-json-logger=2.0.7=py311hca03da5_0
   - python-tzdata=2024.1=pyhd8ed1ab_0
@@ -168,29 +169,53 @@ dependencies:
   - zlib=1.2.13=h5a0b063_0
   - zstd=1.5.5=hd90d995_0
   - pip:
+      - affine==2.4.0
+      - aiohttp==3.9.3
+      - aiosignal==1.3.1
+      - annotated-types==0.6.0
+      - antimeridian==0.3.3
       - appnope==0.1.2
       - asttokens==2.0.5
       - boto3==1.34.58
       - botocore==1.34.58
-      - click==8.1.7
+      - click-plugins==1.1.1
+      - cligj==0.7.2
+      - dynaconf==3.2.4
       - executing==0.8.3
+      - fiona==1.9.5
+      - frozenlist==1.4.1
+      - fsspec==2024.2.0
+      - geopandas==0.14.3
       - humanfriendly==10.0
       - ipykernel==6.28.0
       - ipython==8.20.0
       - jedi==0.19.1
       - jmespath==1.0.1
+      - lxml==5.1.0
+      - multidict==6.0.5
+      - openeo==0.26.0
       - pexpect==4.9.0
       - platformdirs==4.2.0
       - prompt-toolkit==3.0.42
+      - pyarrow==14.0.2
+      - pydantic==2.5.3
+      - pydantic-core==2.14.6
       - pygments==2.15.1
+      - pyparsing==3.1.2
       - pyproj==3.6.1
-      - requests-auth==6.0.0
+      - rasterio==1.3.9
+      - requests-auth==7.0.0
+      - rio-stac==0.8.1
       - s3transfer==0.10.0
+      - snuggs==1.4.7
       - stac-catalog-builder==0.1.0
+      - stac-validator==3.3.2
       - stack-data==0.6.2
-      - terracatalogueclient==0.1.16
+      - stactools==0.5.3
+      - terracatalogueclient==0.1.14
       - traitlets==5.14.1
       - typing-extensions==4.10.0
       - urllib3==2.0.7
       - wcwidth==0.2.5
+      - yarl==1.9.4
 prefix: /Users/gustav/miniconda3/envs/stacbuilder-notebooks
