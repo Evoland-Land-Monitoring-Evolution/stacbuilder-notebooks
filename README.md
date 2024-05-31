@@ -1,4 +1,4 @@
-# EvoLand Creat and Upload a STAC Collection Example Notebook
+# EvoLand Create and Upload a STAC Collection Example Notebook
 
 <img src="https://www.evo-land.eu/wp-content/themes/evoland/public/images/logo-evoland.png"
      alt="Evoland logo"
